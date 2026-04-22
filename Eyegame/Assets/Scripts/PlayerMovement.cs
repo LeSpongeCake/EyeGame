@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
         
         rigidbody2D.angularDamping = 0.0f;
         rigidbody2D.gravityScale = 0.0f;
+        rigidbody2D.freezeRotation = true;
     }
 
     void Update()
