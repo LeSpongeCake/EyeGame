@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public Vector2 MovementSpeed = new Vector2(100.0f, 100.0f); 
     private new Rigidbody2D rigidbody2D; 
-    private Vector2 inputVector = new Vector2(0.0f, 0.0f);
+    public Vector2 inputVector = new Vector2(0.0f, 0.0f);
 
     void Awake()
     {
@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
         rigidbody2D.freezeRotation = true;
     }
 
-    void Update()
+   public void Update()
     {
         inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
     }

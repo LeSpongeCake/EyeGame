@@ -5,13 +5,19 @@ public enum SoundType
     CollectSound,
     Footstep1,
     Footstep2,
+    Footstep3,
+    Footstep4,
+    Footstep5,
+    Footstep6,
+    Footstep7,
+    Footstep8,
 }
 
 [RequireComponent(typeof(AudioSource))]
 public class Sound_Manager : MonoBehaviour
 {
     [SerializeField] private AudioClip[] soundlist;
-    private static Sound_Manager instance;
+    public static Sound_Manager instance;
     private AudioSource audioSource;
 
     private void Awake()
