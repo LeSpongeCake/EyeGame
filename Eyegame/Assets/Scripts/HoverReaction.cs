@@ -11,6 +11,7 @@ public class HoverReaction : MonoBehaviour
 
     public float fillSpeed;
     public bool full;
+    public int type;
 
     public bool isHover;
     void Update()
@@ -31,15 +32,26 @@ public class HoverReaction : MonoBehaviour
         {
             full = true;
         }
+
+        if (full)
+        {
+            
+        }
     }
 
-    public void OnMouseOver()
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        isHover = true;
+        if (other.CompareTag("Player"))
+        {
+            isHover = true;
+        }
     }
 
-    public void OnMouseExit()
+    public void OnTriggerExit2D(Collider2D other)
     {
-        isHover = false;
+        if (other.CompareTag("Player"))
+        {
+            isHover = false;
+        }
     }
 }

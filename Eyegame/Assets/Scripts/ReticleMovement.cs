@@ -11,6 +11,7 @@ public class ReticleMovement : MonoBehaviour
         
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
 
-        reticle.transform.position = new Vector3(mousePos.x, mousePos.y, mousePos.y);
+        Vector3 targetpos = new Vector3(mousePos.x, mousePos.y, 0);
+        reticle.transform.position = Vector3.Lerp(reticle.transform.position, targetpos, 3f * Time.deltaTime);
     }
 }
