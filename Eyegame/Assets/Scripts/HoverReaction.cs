@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -52,6 +51,7 @@ public class HoverReaction : MonoBehaviour
 
             warningBorder.color = c;
         }
+
     }
 
     public void OnTriggerEnter2D(Collider2D other)
