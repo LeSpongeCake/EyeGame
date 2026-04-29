@@ -149,8 +149,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 6501651359027880646}
   - component: {fileID: 7848306208218591676}
   - component: {fileID: 3538215279019696647}
+  - component: {fileID: 1027842878034235339}
   m_Layer: 0
   m_Name: BadOptionBox
   m_TagString: Untagged
@@ -288,9 +289,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverReaction
   fillBar: {fileID: 1020937590606700531}
+  onEvent:
+    m_PersistentCalls:
+      m_Calls: []
   fillSpeed: 1
   full: 0
+  type: 1
   isHover: 0
+  warningBorder: {fileID: 0}
 --- !u!61 &3538215279019696647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -321,7 +327,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -337,3 +343,30 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 98.29407, y: 39.715576}
   m_EdgeRadius: 0
+--- !u!50 &1027842878034235339
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824472014385248598}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
