@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
+
 
 public class MainMenu : MonoBehaviour
 {
@@ -13,4 +15,16 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+
+    public AudioMixer audioMixer;
+
+    public void SetVolume(float volume)
+    {
+        audioMixer.SetFloat("volume",volume);
+    }
+
+    public void SetFullscreen (bool fullscreen)
+    {
+        Screen.fullScreen = fullscreen;
+    }
 }

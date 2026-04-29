@@ -14,6 +14,7 @@ public class EventsScript : MonoBehaviour
     public void Delete()
     {
         Target.SetActive(false);
+        Sound_Manager.PlaySound(SoundType.CollectSound);
     }
 
     public void ResetCamera()
