@@ -289,9 +289,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HoverReaction
   fillBar: {fileID: 1020937590606700531}
+  onEvent:
+    m_PersistentCalls:
+      m_Calls: []
   fillSpeed: 1
   full: 0
+  type: 1
   isHover: 0
+  warningBorder: {fileID: 0}
 --- !u!61 &3538215279019696647
 BoxCollider2D:
   m_ObjectHideFlags: 0
