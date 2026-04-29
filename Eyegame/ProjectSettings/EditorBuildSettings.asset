@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SpookyScene.unity
     guid: 2b881aff2a223f244b67e0fcdb34f0bd
+  - enabled: 1
+    path: Assets/Scenes/supermarket 2.unity
+    guid: 8ae9aabe2566e4c4e857caf5774f6e40
+  - enabled: 1
+    path: Assets/Scenes/SpookyScene 2.unity
+    guid: 555a1da227878e14a81c43c27ef80543
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

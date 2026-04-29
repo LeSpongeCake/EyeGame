@@ -11,9 +11,20 @@ public class EventsScript : MonoBehaviour
         SceneManager.LoadScene("SpookyScene");
     }
 
+    public void LoadScene2()
+    {
+        SceneManager.LoadScene("SpookyScene 2");
+    }
+
+    public void LoadScene3()
+    {
+        SceneManager.LoadScene("supermarket 2");
+    }
+
+    
     public void Delete()
     {
-        //Sound_Manager.PlaySound(SoundType.CollectSound);
+        Sound_Manager.PlaySound(SoundType.CollectSound);
         Target.SetActive(false);
     }
 
